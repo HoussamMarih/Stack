@@ -13,7 +13,12 @@ int main()
         pileEntier.push(x);
     }
     pileEntier.afficher();
-    cout << "Le sommet est : " << pileEntier.top() << endl;
+
+
+    if (!pileEntier.vide()) {
+        cout << "Le sommet est : " << pileEntier.top() << endl;
+    }
+    
 
     string s;
     for (int i = 0; i < 5; i++) {
@@ -22,6 +27,8 @@ int main()
         pileChaine.push(s);
     }
     pileChaine.afficher();
-    cout << "Le sommet est : " << pileChaine.top() << endl;
+    
+    if (!pileChaine.vide()) {
+        cout << "Le sommet est : " << pileChaine.top() << endl;
+    }
 }
-
